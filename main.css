@@ -1,14 +1,14 @@
 h1 {
-    color: blue;
-    background-color: yellow;
+    color: rgb(140, 100, 170);
+    background-color: rgb(254, 254, 254);
     border: 1px solid black;
   }
   
   p {
-    color: red;
+    color: rgb(85, 85, 85);
   }
   
 .special {
-    color: orange;
+    color: rgb(92, 198, 208);
     font-weight: bold;
   }
