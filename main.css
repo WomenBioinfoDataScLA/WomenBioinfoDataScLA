@@ -1,14 +1,70 @@
 h1 {
-    color: rgb(140, 100, 170);
-    background-color: rgb(254, 254, 254);
-    border: 1px solid black;
+  color: rgb(140, 100, 170);
+  background-color: rgb(254, 254, 254);
+  border: 1px solid black;
+}
+  
+p,li {
+  color: rgb(85, 85, 85);
+}
+
+nav li{
+  list-style-type: none;
+  margin: 0 2vw;
+}
+  
+nav a{
+  text-decoration: none;
+  color: rgb(254, 254, 254);
+}
+
+a:hover{
+  color: rgb(92, 198, 208);
+}
+
+nav{
+  width: 100vw;
+  background-color: rgb(140, 100, 170);
+}
+
+nav ul{
+  display: flex;
+}
+
+nav button{
+  display: none;
+}
+
+/*change the layout of the navigation bar for all the screens 
+that have a width less or equal than 500px*/
+
+@media only screen and (max-width: 500px) {
+  /*shows elements in a column*/
+  ul{
+    flex-direction: column;
   }
   
-  p,li {
-    color: rgb(85, 85, 85);
+  /* deletes margin on top or bottom of the a tag*/
+  li{
+    margin: 0;
   }
-  
-.special {
-    color: rgb(92, 198, 208);
-    font-weight: bold;
+ /* makes sure that the a tag will take the entire screen*/
+  a{
+    display: block;
   }
+  button{
+    /*makes the button visible*/
+    display: block;
+    
+    /*since we are here, we can style it a little bit!*/
+    padding: 2vw;
+    font-size: 3vh;
+    background-color: #AFE0FF;
+    border: none;
+    
+    /*outline none removes the default blue border that appears anytime you click on the button*/
+    outline: none;
+    
+    cursor: pointer;
+  }
+}
