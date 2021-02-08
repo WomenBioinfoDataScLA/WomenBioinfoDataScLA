@@ -8,31 +8,39 @@ p,li {
   color: rgb(85, 85, 85);
 }
 
+/*----------------------------- nav bar -----------------------------*/
+/*https://itnext.io/how-to-create-a-responsive-navigation-bar-with-html-css-and-jquery-step-by-step-tutorial-9c780b58479f*/
+
+nav ul{
+  margin: 0; /* remove margin */
+  padding: 0; /* remove identation */
+}
+
 nav li{
-  list-style-type: none;
-  margin: 0 2vw;
+  list-style-type: none; /* remove bullet point */
+  margin: 0 2vw; /* add space between items in the list */
 }
   
 nav a{
-  text-decoration: none;
+  text-decoration: none; /* remove underline */
   color: rgb(254, 254, 254);
 }
 
-a:hover{
+nav a:hover{
   color: rgb(92, 198, 208);
 }
 
 nav{
-  width: 100vw;
+  width: 100vw; /* 100% of the viewport width */
   background-color: rgb(140, 100, 170);
 }
 
 nav ul{
-  display: flex;
+  display: flex; /* links in a row */
 }
 
-nav button{
-  display: none;
+nav ul button{
+  display: none; /* remove button on a wide screen */
 }
 
 /*change the layout of the navigation bar for all the screens 
@@ -40,31 +48,30 @@ that have a width less or equal than 500px*/
 
 @media only screen and (max-width: 500px) {
   /*shows elements in a column*/
-  ul{
+  nav ul{
     flex-direction: column;
   }
   
   /* deletes margin on top or bottom of the a tag*/
-  li{
+  nav li{
     margin: 0;
   }
  /* makes sure that the a tag will take the entire screen*/
-  a{
+  nav a{
     display: block;
   }
-  button{
+  nav ul button{
     /*makes the button visible*/
     display: block;
     
     /*since we are here, we can style it a little bit!*/
     padding: 2vw;
     font-size: 3vh;
-    background-color: #AFE0FF;
     border: none;
     
     /*outline none removes the default blue border that appears anytime you click on the button*/
     outline: none;
-    
     cursor: pointer;
+    align-self: flex-start;
   }
 }
