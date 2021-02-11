@@ -1,3 +1,13 @@
+/*----------------------------- import fonts -----------------------------*/
+@import url('https://fonts.google.com/?query=lato&preview.text_type=custom&selection.family=Lato:ital,wght@0,400;1,300;1,400');
+
+body {
+  color: #666666;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+}
+
 h1 {
   color: rgb(140, 100, 170);
   background-color: rgb(254, 254, 254);
@@ -8,17 +18,37 @@ p,li {
   color: rgb(85, 85, 85);
 }
 
+.logofigure{
+  margin-left:2vw;
+}
+
+.logoimg{
+  width:auto;
+  height:80px;
+}
+
 /*----------------------------- nav bar -----------------------------*/
 /*https://itnext.io/how-to-create-a-responsive-navigation-bar-with-html-css-and-jquery-step-by-step-tutorial-9c780b58479f*/
 
+nav{
+  width: 100vw; /* 100% of the viewport width */
+  background-color: rgb(140, 100, 170);
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
 nav ul{
   margin: 0; /* remove margin */
-  padding: 0; /* remove identation */
-}
+  display: flex; /* links in a row */
+  text-transform: uppercase;
+  }
 
 nav li{
   list-style-type: none; /* remove bullet point */
-  margin: 0 2vw; /* add space between items in the list */
+  margin: 0 1.5vw; /* add space between items in the list */
+  font-size: 12px;
+  font-weight: bold;
 }
   
 nav a{
@@ -30,16 +60,9 @@ nav a:hover{
   color: rgb(92, 198, 208);
 }
 
-nav{
-  width: 100vw; /* 100% of the viewport width */
-  background-color: rgb(140, 100, 170);
-}
 
-nav ul{
-  display: flex; /* links in a row */
-}
 
-nav ul button{
+nav button{
   display: none; /* remove button on a wide screen */
 }
 
@@ -60,10 +83,13 @@ that have a width less or equal than 500px*/
   nav a{
     display: block;
   }
-  nav ul button{
+
+  nav button{
     /*makes the button visible*/
     display: block;
-    
+  }
+
+  nav ul button{  
     /*since we are here, we can style it a little bit!*/
     padding: 2vw;
     font-size: 3vh;
@@ -75,3 +101,45 @@ that have a width less or equal than 500px*/
     align-self: flex-start;
   }
 }
+
+/*----------------------------- ABOUT and GOALS -----------------------------*/
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+}
+
+.abtext {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 40px 40px;
+}
+
+.abtext p,ul{
+  line-height: 28px;
+}
+
+.abfigure {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding: 40px 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+.abimg{
+  width:auto;
+  height:300px;
+}
+
+.goalsimg{
+  width:auto;
+  height:200px;
+}
+
