@@ -6,6 +6,8 @@ body {
   font-size: 14px;
   font-family: 'Lato', sans-serif;
   font-weight: normal;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -102,14 +104,22 @@ that have a width less or equal than 500px*/
   }
 }
 
-/*----------------------------- ABOUT and GOALS -----------------------------*/
+/*----------------------------- ABOUT -----------------------------*/
+
+.abouth2{
+  font-weight: bold;
+  color:  rgb(140, 100, 170);
+  line-height: 50px;
+  font-size: 50px;
+}
 
 .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 80%;
-  justify-content: center;
+  width: 80vw;
+  padding: 0;
+  margin: 0;
 }
 
 .abtext {
@@ -129,7 +139,7 @@ that have a width less or equal than 500px*/
   flex-basis: 100%;
   flex: 1;
   padding: 40px 0px;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -138,8 +148,31 @@ that have a width less or equal than 500px*/
   height:300px;
 }
 
-.goalsimg{
-  width:auto;
-  height:200px;
+/*----------------------------- GOALS and 1stWBDS -----------------------------*/
+
+.centerh2{
+  text-align: center;
+  margin-top: 40px;
 }
 
+.column{
+  list-style: none;
+  display: flex;
+  width: 80vw;
+  justify-content: center;
+  }
+
+.goaltext{
+  background-color: rgb(220, 220, 220);
+  padding: 40px;
+  margin: 20px;
+  text-align: center;
+}
+
+/*----------------------------- FOOTER -----------------------------*/
+
+.bottom{
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
