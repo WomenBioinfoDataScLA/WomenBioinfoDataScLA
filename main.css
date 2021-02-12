@@ -21,29 +21,36 @@ p,li {
 }
 
 .logofigure{
-  margin-left:2vw;
+  margin:0 2vw;
+  display: flex;
+  align-items: flex-start;
 }
 
 .logoimg{
   width:auto;
   height:80px;
+  margin:0;
 }
 
 /*----------------------------- nav bar -----------------------------*/
 /*https://itnext.io/how-to-create-a-responsive-navigation-bar-with-html-css-and-jquery-step-by-step-tutorial-9c780b58479f*/
 
 nav{
-  width: 100vw; /* 100% of the viewport width */
-  background-color: rgb(140, 100, 170);
-  height: 70px;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
+  margin:0;
 }
 
-nav ul{
-  margin: 0; /* remove margin */
+.navlist{
+  width: 700vw; /* 100% of the viewport width */
+  background-color: rgb(140, 100, 170);
+  height: 70px;
   display: flex; /* links in a row */
+  justify-content: space-between;
+  align-items: center;
   text-transform: uppercase;
+  margin:0;
   }
 
 nav li{
