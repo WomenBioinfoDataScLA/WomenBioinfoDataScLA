@@ -42,7 +42,7 @@ nav{
   margin:0;
 }
 
-.navlist{
+nav ul{
   width: 700vw; /* 100% of the viewport width */
   background-color: rgb(140, 100, 170);
   height: 70px;
@@ -82,6 +82,7 @@ that have a width less or equal than 500px*/
   /*shows elements in a column*/
   nav ul{
     flex-direction: column;
+    padding: 0 40px;
   }
   
   /* deletes margin on top or bottom of the a tag*/
@@ -239,7 +240,7 @@ text-align: center;
   text-align: center;
   }
 
-.purplerow p,a{
+.purplerow p{
   color:#FFFFFF;
   margin-top: 2px;
   font-size: 20px;
