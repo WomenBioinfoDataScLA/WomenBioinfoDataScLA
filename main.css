@@ -117,9 +117,9 @@ that have a width less or equal than 500px*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 80vw;
   padding: 0;
-  margin: 0;
+  margin: 0px 10vw;
+
 }
 
 .abtext {
@@ -139,13 +139,42 @@ that have a width less or equal than 500px*/
   flex-basis: 100%;
   flex: 1;
   padding: 40px 0px;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 }
 
 .abimg{
   width:auto;
   height:300px;
+}
+
+/*----------------------------- BUTTONS -----------------------------*/
+/*https://fdossena.com/?p=html5cool/buttons/i.frag*/
+
+.button{
+  padding:0.3em 1.2em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:2em; /* borda arredondada */
+  text-decoration:none;  /* remove hiperlink */
+  font-family:'Lato',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  background-color:  rgb(92, 198, 208);
+  text-align:center;
+  transition: all 0.2s;
+  width: 25%;
+  line-height: 25px;
+}
+
+.button:hover{
+  background-color:#4095c6;
+}
+
+@media all and (max-width:30em){
+a.button{
+  display:block;
+  margin:0.2em auto;
+  }
 }
 
 /*----------------------------- GOALS and 1stWBDS -----------------------------*/
@@ -159,7 +188,7 @@ that have a width less or equal than 500px*/
   list-style: none;
   display: flex;
   width: 80vw;
-  justify-content: center;
+  justify-content: space-between;
   }
 
 .goaltext{
@@ -168,6 +197,31 @@ that have a width less or equal than 500px*/
   margin: 20px;
   text-align: center;
 }
+
+.purplerow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(140, 100, 170);
+  color:#FFFFFF;
+}
+
+.purplerow h2{
+color:#FFFFFF;
+}
+
+.purplerow p{
+  color:#FFFFFF;
+  margin-top: 2px;
+}
+
+.purplerow span{
+  color:rgb(92, 198, 208);
+  font-size: 15px;
+  }
 
 /*----------------------------- FOOTER -----------------------------*/
 
