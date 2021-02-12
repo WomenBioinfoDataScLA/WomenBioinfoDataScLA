@@ -114,6 +114,7 @@ that have a width less or equal than 500px*/
 /*----------------------------- ABOUT -----------------------------*/
 
 .abouth2{
+  text-align: center;
   font-weight: bold;
   color:  rgb(140, 100, 170);
   line-height: 50px;
@@ -134,6 +135,7 @@ that have a width less or equal than 500px*/
   flex-direction: column;
   flex: 1;
   padding: 40px 40px;
+  text-align: center;
 }
 
 .abtext p,ul{
@@ -167,10 +169,12 @@ that have a width less or equal than 500px*/
   font-weight:300;
   color:#FFFFFF;
   background-color:  rgb(92, 198, 208);
-  text-align:center;
   transition: all 0.2s;
   width: 25%;
   line-height: 25px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 
 .button:hover{
@@ -184,11 +188,16 @@ a.button{
   }
 }
 
-/*----------------------------- GOALS and 1stWBDS -----------------------------*/
+/*----------------------------- GOALS -----------------------------*/
 
 .centerh2{
   text-align: center;
   margin-top: 40px;
+  margin-bottom: 0;
+  font-weight: bold;
+  color:  rgb(140, 100, 170);
+  line-height: 50px;
+  font-size: 50px;
 }
 
 .column{
@@ -202,8 +211,11 @@ a.button{
   background-color: rgb(220, 220, 220);
   padding: 40px;
   margin: 20px;
+  line-height: 16px;
   text-align: center;
 }
+
+/*----------------------------- 1stWBDS -----------------------------*/
 
 .purplerow {
   display: flex;
@@ -211,24 +223,30 @@ a.button{
   flex-wrap: wrap;
   justify-content: center;
   padding: 0;
-  margin: 0;
+  margin: 20px;
   background-color: rgb(140, 100, 170);
-  color:#FFFFFF;
 }
 
 .purplerow h2{
 color:#FFFFFF;
-}
-
-.purplerow p{
-  color:#FFFFFF;
-  margin-top: 2px;
+font-size: 40px;
+text-align: center;
 }
 
 .purplerow span{
   color:rgb(92, 198, 208);
-  font-size: 15px;
+  font-size: 30px;
+  text-align: center;
   }
+
+.purplerow p,a{
+  color:#FFFFFF;
+  margin-top: 2px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+
 
 /*----------------------------- FOOTER -----------------------------*/
 
