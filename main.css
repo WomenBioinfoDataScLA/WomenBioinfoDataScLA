@@ -60,7 +60,6 @@ nav ul{
   background-color: rgb(140, 100, 170);
   height: 70px;
   display: flex; /* links in a row */
-  justify-content: space-around;
   align-items: center;
   text-transform: uppercase;
   margin:0;
@@ -272,8 +271,33 @@ margin: 20px 0px;
 
 /*----------------------------- FOOTER -----------------------------*/
 
-.bottom{
+.mediarow {
+  background-color: rgb(140, 100, 170);
+  margin-top: 20px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mediarow h3 {
+  color:#FFFFFF;
+  margin-bottom: 0px;
+}
+
+.medialinks{
     height: 70px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    margin:0;
+    line-height: 13px;
+    padding:0;
+}
+
+.medialinks li{
+  list-style-type: none; /* remove bullet point */
+  margin: 0 1.5vw; /* add space between items in the list */
 }
