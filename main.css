@@ -69,8 +69,6 @@ nav a:hover{
   color: rgb(92, 198, 208);
 }
 
-
-
 nav button{
   display: none; /* remove button on a wide screen */
 }
@@ -246,8 +244,6 @@ text-align: center;
   font-size: 20px;
   line-height: 30px;
 }
-
-
 
 /*----------------------------- FOOTER -----------------------------*/
 
