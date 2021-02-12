@@ -11,9 +11,22 @@ body {
 }
 
 h1 {
-  color: rgb(140, 100, 170);
-  background-color: rgb(254, 254, 254);
-  border: 1px solid black;
+  font-size: 24px
+}
+h2 {
+  font-size: 22px
+}
+h3 {
+  font-size: 18px
+}
+h4 {
+  font-size: 16px
+}
+h5 {
+  font-size: 14px
+}
+h6 {
+  font-size: 13px
 }
   
 p,li {
@@ -47,7 +60,7 @@ nav ul{
   background-color: rgb(140, 100, 170);
   height: 70px;
   display: flex; /* links in a row */
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-transform: uppercase;
   margin:0;
@@ -156,7 +169,7 @@ that have a width less or equal than 500px*/
   height:300px;
 }
 
-/*----------------------------- BUTTONS -----------------------------*/
+/*----------------------------- BUTTON -----------------------------*/
 /*https://fdossena.com/?p=html5cool/buttons/i.frag*/
 
 .button{
@@ -210,8 +223,10 @@ a.button{
   background-color: rgb(220, 220, 220);
   padding: 40px;
   margin: 20px;
-  line-height: 16px;
+  line-height: 18px;
   text-align: center;
+  flex: 1;
+  font-size: 15px;
 }
 
 /*----------------------------- 1stWBDS -----------------------------*/
@@ -221,8 +236,8 @@ a.button{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0;
-  margin: 20px;
+  padding: 20px;
+  margin: 20px 0px;
   background-color: rgb(140, 100, 170);
 }
 
@@ -230,6 +245,11 @@ a.button{
 color:#FFFFFF;
 font-size: 40px;
 text-align: center;
+margin: 20px 0px;
+}
+
+.purplerow h2:hover {
+  color: #c4c1c1;
 }
 
 .purplerow span{
@@ -238,10 +258,15 @@ text-align: center;
   text-align: center;
   }
 
-.purplerow p{
+.purplerow span:hover {
   color:#FFFFFF;
-  margin-top: 2px;
-  font-size: 20px;
+  }
+
+.p_purplerow{
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 0px;
+  font-size: 18px;
   line-height: 30px;
 }
 
