@@ -51,8 +51,16 @@ nav{
 
 .logoimg{
   width:auto;
-  height:80px;
+  height:78px;
   margin:0;
+}
+
+.arrowfigure{
+  margin:0px -1px 0px 0px;
+}
+
+nav button{
+  display: none; /* remove button on a wide screen */
 }
 
 nav ul{
@@ -63,6 +71,7 @@ nav ul{
   align-items: center;
   text-transform: uppercase;
   margin:0;
+  padding-left: 25px;
 }
 
 nav li{
@@ -81,18 +90,25 @@ nav a:hover{
   color: rgb(92, 198, 208);
 }
 
-nav button{
-  display: none; /* remove button on a wide screen */
-}
-
 /*change the layout of the navigation bar for all the screens 
 that have a width less or equal than 500px*/
 
 @media only screen and (max-width: 500px) {
   /*shows elements in a column*/
+  .arrowfigure{
+    display: none;
+  }
+
+  .logoimg{
+    width:auto;
+    height:150px;
+    margin:0;
+  }
+  
   nav ul{
     flex-direction: column;
     padding: 0 40px;
+    height: auto;
   }
   
   /* deletes margin on top or bottom of the a tag*/
