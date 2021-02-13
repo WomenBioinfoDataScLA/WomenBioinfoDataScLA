@@ -140,14 +140,6 @@ that have a width less or equal than 500px*/
 
 /*----------------------------- ABOUT -----------------------------*/
 
-.abouth2{
-  text-align: center;
-  font-weight: bold;
-  color:  rgb(140, 100, 170);
-  line-height: 50px;
-  font-size: 50px;
-}
-
 .row {
   display: flex;
   flex-direction: row;
@@ -162,6 +154,14 @@ that have a width less or equal than 500px*/
   flex: 1;
   padding: 40px 40px;
   text-align: center;
+}
+
+.abouth2{
+  text-align: center;
+  font-weight: bold;
+  color:  rgb(140, 100, 170);
+  line-height: 50px;
+  font-size: 50px;
 }
 
 .abtext p,ul{
@@ -282,6 +282,57 @@ a.button{
   margin-bottom: 0px;
   font-size: 18px;
   line-height: 30px;
+}
+
+/*----------------------------- PROJECTS -----------------------------*/
+.projgrid{
+  display: grid;
+  grid-template-columns: 20% 20% 40%; 
+  grid-template-rows: 200px 200px;
+  justify-content: center;
+  padding:40px;
+  gap: 10px;
+  text-align: center;
+}
+
+.projtext {
+  grid-column-start:3;
+  grid-row: 1/3;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projh2{
+  text-align: center;
+  font-weight: bold;
+  color:  rgb(140, 100, 170);
+  line-height: 50px;
+  font-size: 50px;
+  margin: 20px;
+}
+
+.projitem1{
+  grid-column-start:1;
+  background-color: rgb(220, 220, 220);
+}
+
+.projitem2{
+  grid-column-start:2;
+  background-color: rgb(220, 220, 220);
+}
+
+.projitem3{
+  grid-column-start:1;
+  grid-row-start:2;
+  background-color: rgb(220, 220, 220);
+}
+
+.projitem4{
+  grid-column-start:2;
+  grid-row-start:2;
+  background-color: rgb(220, 220, 220);
 }
 
 /*----------------------------- FOOTER -----------------------------*/
