@@ -33,6 +33,16 @@ p,li {
   color: rgb(85, 85, 85);
 }
 
+/*----------------------------- nav bar -----------------------------*/
+/*https://itnext.io/how-to-create-a-responsive-navigation-bar-with-html-css-and-jquery-step-by-step-tutorial-9c780b58479f*/
+
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin:0;
+}
+
 .logofigure{
   margin:0 2vw;
   display: flex;
@@ -45,16 +55,6 @@ p,li {
   margin:0;
 }
 
-/*----------------------------- nav bar -----------------------------*/
-/*https://itnext.io/how-to-create-a-responsive-navigation-bar-with-html-css-and-jquery-step-by-step-tutorial-9c780b58479f*/
-
-nav{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  margin:0;
-}
-
 nav ul{
   width: 700vw; /* 100% of the viewport width */
   background-color: rgb(140, 100, 170);
@@ -63,7 +63,7 @@ nav ul{
   align-items: center;
   text-transform: uppercase;
   margin:0;
-  }
+}
 
 nav li{
   list-style-type: none; /* remove bullet point */
@@ -138,7 +138,6 @@ that have a width less or equal than 500px*/
   flex-wrap: wrap;
   padding: 0;
   margin: 0px 10vw;
-
 }
 
 .abtext {
@@ -216,7 +215,7 @@ a.button{
   display: flex;
   width: 80vw;
   justify-content: space-between;
-  }
+}
 
 .goaltext{
   background-color: rgb(220, 220, 220);
@@ -255,11 +254,11 @@ a.button{
   color:rgb(92, 198, 208);
   font-size: 30px;
   text-align: center;
-  }
+}
 
 .purplerow span:hover {
   color:#FFFFFF;
-  }
+}
 
 .p_purplerow{
   text-align: center;
@@ -320,4 +319,4 @@ a.button{
 .medialinks img:hover {
   background-color:rgb(92, 198, 208);
   border-radius: 20px;
-  }
+}
