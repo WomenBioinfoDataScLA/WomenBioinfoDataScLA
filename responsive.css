@@ -44,4 +44,12 @@ that have a width less or equal than 500px*/
       cursor: pointer;
       align-self: flex-start;
     }
+    /*------------ ABOUT ----------*/
+    .abtext {
+        display: flex;
+        flex-direction: column;
+        flex:  2;
+        padding: 40px 0px 40px 40px;
+        text-align: center;
+      }
   }
