@@ -2,27 +2,35 @@
 that have a width less or equal than 500px*/
 
 @media only screen and (max-width: 500px) {
-    /*shows elements in a column*/
-    .arrowfigure{
-      display: none;
-    }
+  body{
+    width:100vw;
+  }
+
+  /*shows elements in a column*/
+  .arrowfigure{
+    display: none;
+  }
   
-    .logoimg{
-      width:auto;
-      height:150px;
-      margin:0;
-    }
+  .logoimg{
+    width:auto;
+    height:150px;
+    margin:0;
+  }
+
+  nav{
+    background: none;
+  }
     
-    nav ul{
-      flex-direction: column;
-      padding: 0 40px;
-      height: auto;
-    }
+  nav ul{
+    flex-direction: column;
+    padding: 0 40px;
+    height: auto;
+  }
     
-    /* deletes margin on top or bottom of the a tag*/
-    nav li{
-      margin: 0;
-    }
+  /* deletes margin on top or bottom of the a tag*/
+  nav li{
+    margin: 0;
+  }
    /* makes sure that the a tag will take the entire screen*/
     nav a{
       display: block;
@@ -45,11 +53,20 @@ that have a width less or equal than 500px*/
       align-self: flex-start;
     }
     /*------------ ABOUT ----------*/
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0px 10vw;
+    }
+
     .abtext {
         display: flex;
         flex-direction: column;
         flex:  2;
-        padding: 40px 0px 40px 40px;
+        padding-top: 50px;
         text-align: center;
       }
   }
