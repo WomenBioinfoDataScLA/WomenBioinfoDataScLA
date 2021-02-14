@@ -90,54 +90,6 @@ nav a:hover{
   color: rgb(92, 198, 208);
 }
 
-/*change the layout of the navigation bar for all the screens 
-that have a width less or equal than 500px*/
-
-@media only screen and (max-width: 500px) {
-  /*shows elements in a column*/
-  .arrowfigure{
-    display: none;
-  }
-
-  .logoimg{
-    width:auto;
-    height:150px;
-    margin:0;
-  }
-  
-  nav ul{
-    flex-direction: column;
-    padding: 0 40px;
-    height: auto;
-  }
-  
-  /* deletes margin on top or bottom of the a tag*/
-  nav li{
-    margin: 0;
-  }
- /* makes sure that the a tag will take the entire screen*/
-  nav a{
-    display: block;
-  }
-
-  nav button{
-    /*makes the button visible*/
-    display: block;
-  }
-
-  nav ul button{  
-    /*since we are here, we can style it a little bit!*/
-    padding: 2vw;
-    font-size: 3vh;
-    border: none;
-    
-    /*outline none removes the default blue border that appears anytime you click on the button*/
-    outline: none;
-    cursor: pointer;
-    align-self: flex-start;
-  }
-}
-
 /*----------------------------- ABOUT -----------------------------*/
 
 .row {
@@ -151,8 +103,8 @@ that have a width less or equal than 500px*/
 .abtext {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  padding: 40px 40px;
+  flex: 1.3 1 0%;
+  padding: 40px 0px 40px 40px;
   text-align: center;
 }
 
@@ -166,6 +118,7 @@ that have a width less or equal than 500px*/
 
 .abtext p,ul{
   line-height: 28px;
+  font-size: 15px;
 }
 
 .abfigure {
@@ -180,7 +133,7 @@ that have a width less or equal than 500px*/
 
 .abimg{
   width:auto;
-  height:300px;
+  height:350px;
 }
 
 /*----------------------------- BUTTON -----------------------------*/
@@ -287,7 +240,7 @@ a.button{
 /*----------------------------- PROJECTS -----------------------------*/
 .projgrid{
   display: grid;
-  grid-template-columns: 20% 20% 40%; 
+  grid-template-columns: 40% 20% 20%; 
   grid-template-rows: 200px 200px;
   justify-content: center;
   padding:40px;
@@ -296,7 +249,7 @@ a.button{
 }
 
 .projtext {
-  grid-column-start:3;
+  grid-column-start:1;
   grid-row: 1/3;
   margin-left: 50px;
   display: flex;
@@ -314,23 +267,23 @@ a.button{
 }
 
 .projitem1{
-  grid-column-start:1;
-  background-color: rgb(220, 220, 220);
-}
-
-.projitem2{
   grid-column-start:2;
   background-color: rgb(220, 220, 220);
 }
 
+.projitem2{
+  grid-column-start:3;
+  background-color: rgb(220, 220, 220);
+}
+
 .projitem3{
-  grid-column-start:1;
+  grid-column-start:2;
   grid-row-start:2;
   background-color: rgb(220, 220, 220);
 }
 
 .projitem4{
-  grid-column-start:2;
+  grid-column-start:3;
   grid-row-start:2;
   background-color: rgb(220, 220, 220);
 }
