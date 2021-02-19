@@ -261,9 +261,9 @@ a.button{
 .projgrid{
   display: grid;
   grid-template-columns: 50% 50%; 
-  grid-template-rows: 13vw 13vw;
+  grid-template-rows: 15vw 15vw;
   justify-content: center;
-  align-items: center;
+  align-content: stretch;
   padding: 0.2vw 2vw;
   gap: 2vw;
   text-align: center;
@@ -272,11 +272,17 @@ a.button{
 .projgrid div {
   background-color: #e7d4f9;
   border-radius:2em;
-  padding:2% 2%;
+  padding:2% 4%;
 }
 
 .projgrid div:hover{
   transform: scale(1.05);
+}
+
+.projgrid h3{
+  color:#4d38a5;
+  font-size: 2.2vw;
+  margin-bottom: 1vw;
 }
 
 .projitem1{
@@ -390,4 +396,10 @@ a.button{
   height: 15vw;
   object-fit: cover;
   border-radius: 100%;
+}
+
+@media screen and (max-width:800px) {
+  body {
+      background-color: rgb(225, 0, 255);
+  }
 }
