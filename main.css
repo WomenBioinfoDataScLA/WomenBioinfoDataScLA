@@ -22,6 +22,10 @@ h1 {
 h2 {
   font-size: 3.5vw;
   color:  rgb(140, 100, 170);
+  text-align: center;
+  font-weight: bold;
+  line-height: 4vw;
+  margin-bottom: 1.5vw;
 }
 h3 {
   font-size: 1.3vw;
@@ -99,7 +103,7 @@ nav a{
 }
 
 nav a:hover{
-  color: rgb(92, 198, 208);
+  color: #ffa992;
 }
 
 /*----------------------------- ABOUT -----------------------------*/
@@ -107,7 +111,7 @@ nav a:hover{
 .row {
   display: flex;
   padding: 0;
-  margin: 0px 12vw;
+  margin: 5vw 12vw;
   align-items: center;
   justify-content: center;
 }
@@ -116,13 +120,6 @@ nav a:hover{
   padding: 3vw 0vw;
   text-align: center;
   margin-right: 2vw;
-}
-
-.abtext h2{
-  text-align: center;
-  font-weight: bold;
-  line-height: 4vw;
-  margin-bottom: 1.5vw;
 }
 
 .abtext p{
@@ -173,16 +170,8 @@ a.button{
   flex-direction: column;
   justify-content: center;
   text-align: center;
-}
-
-.centerh2{
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 0;
-  font-weight: bold;
-  color:  rgb(140, 100, 170);
-  line-height: 50px;
-  font-size: 50px;
+  margin: 5vw 12vw;
+  padding: 0;
 }
 
 .column{
@@ -192,56 +181,69 @@ a.button{
   justify-content: space-between;
 }
 
-.goaltext{
-  background-color: rgb(220, 220, 220);
+.column li{
+  background-color: #e7d4f9;
   padding: 40px;
   margin: 20px;
   line-height: 18px;
   text-align: center;
   flex: 1;
   font-size: 15px;
+  border-radius:2em; 
 }
 
 /*----------------------------- 1stWBDS -----------------------------*/
+
+.p_purplerow{
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 0px;
+  line-height: 30px;
+}
 
 .purplerow {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px;
-  margin: 20px 0px;
-  background-color: rgb(140, 100, 170);
+  padding: 1.5vw 10vw;
+  margin: 1vw 0vw 1vw 0vw;
+  background-color: #906aac;
+}
+
+.purplerow ul{
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .purplerow h2{
-  color:#FFFFFF;
+  color:#e7d4f9;
   font-size: 40px;
   text-align: center;
-  margin: 20px 0px;
+  margin: 1vw 0vw;
 }
 
 .purplerow h2:hover {
-  color: #c4c1c1;
+  color: #ffa992;
 }
 
-.purplerow span{
-  color:rgb(92, 198, 208);
+.purplerow h3{
+  color:#5cc6d0;
   font-size: 30px;
   text-align: center;
+  margin: 10px 0px;
+}
+
+.purplerow h3:hover {
+  color: #ffa992;
 }
 
 .purplerow span:hover {
   color:#FFFFFF;
 }
 
-.p_purplerow{
-  text-align: center;
-  margin-top: 4px;
-  margin-bottom: 0px;
-  font-size: 18px;
-  line-height: 30px;
-}
 
 /*----------------------------- PROJECTS -----------------------------*/
 
