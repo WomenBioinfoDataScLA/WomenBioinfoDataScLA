@@ -364,3 +364,29 @@ a.button{
   border-radius: 1.4vw;
 }
 
+/*--------WHO we are--------*/
+.memberslist {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+}
+
+.member{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  margin-left: 50px;
+  width: 20vw;
+  height: 480px;
+}
+
+.member img{
+  width: 15vw;
+  height: 15vw;
+  object-fit: cover;
+  border-radius: 100%;
+}
