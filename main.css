@@ -261,8 +261,9 @@ a.button{
 .projgrid{
   display: grid;
   grid-template-columns: 50% 50%; 
-  grid-template-rows: 10vw 10vw;
+  grid-template-rows: 13vw 13vw;
   justify-content: center;
+  align-items: center;
   padding: 0.2vw 2vw;
   gap: 2vw;
   text-align: center;
@@ -271,7 +272,7 @@ a.button{
 .projgrid div {
   background-color: #e7d4f9;
   border-radius:2em;
-  padding:1% 2%;
+  padding:2% 2%;
 }
 
 .projgrid div:hover{
@@ -280,7 +281,6 @@ a.button{
 
 .projitem1{
   grid-column-start:1;
-
 }
 
 .projitem2{
@@ -371,6 +371,7 @@ a.button{
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
+  width: 100%;
 }
 
 .member{
