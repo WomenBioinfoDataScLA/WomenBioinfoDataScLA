@@ -95,7 +95,7 @@ nav li{
   font-size: 0.9vw;
   font-weight: bold;
 }
-  
+ 
 nav a{
   text-decoration: none; /* remove underline */
   color: rgb(254, 254, 254);
@@ -103,6 +103,14 @@ nav a{
 
 nav a:hover{
   color: #ffa992;
+}
+
+.languages{
+  margin:0 0.35vw;
+}
+
+.languages a{
+  color:#bdf2f2;
 }
 
 /*----------------------------- ABOUT -----------------------------*/
