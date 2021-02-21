@@ -46,6 +46,10 @@ p,li {
   line-height: 28px;
 }
 
+a{
+  text-decoration: none; /* remove underline */
+}
+
 /*----------------------------- nav bar -----------------------------*/
 /*https://itnext.io/how-to-create-a-responsive-navigation-bar-with-html-css-and-jquery-step-by-step-tutorial-9c780b58479f*/
 
@@ -60,8 +64,6 @@ nav{
 
 .logofigure{
   margin:0 3vw;
-  display: flex;
-  align-items: flex-start;
 }
 
 .logoimg{
@@ -79,7 +81,7 @@ nav button{
 }
 
 nav ul{
-  width: 700vw; /* 100% of the viewport width */
+  width: 100%;
   background-color: rgb(140, 100, 170);
   height: 5.12vw;
   display: flex; /* links in a row */
@@ -97,7 +99,6 @@ nav li{
 }
  
 nav a{
-  text-decoration: none; /* remove underline */
   color: rgb(254, 254, 254);
 }
 
@@ -150,7 +151,6 @@ nav a:hover{
   padding: 0.7vw 2.6vw;
   margin:1vw;
   border-radius:2em; /* borda arredondada */
-  text-decoration:none;  /* remove hiperlink */
   color:#FFFFFF;
   background-color:  #5cc6d0;
   transition: all 0.2s;
@@ -180,14 +180,14 @@ a.button{
   margin: 5vw 12vw;
 }
 
-.column{
+.goals ul{
   list-style: none;
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
 
-.column li{
+.goals li{
   background-color: #e7d4f9;
   padding: 2.92vw;
   margin: 1.46vw;
@@ -251,7 +251,7 @@ a.button{
 
 /*----------------------------- PROJECTS -----------------------------*/
 
-.projtext {
+.projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -398,8 +398,3 @@ a.button{
   border-radius: 100%;
 }
 
-@media screen and (max-width:800px) {
-  body {
-      background-color: rgb(225, 0, 255);
-  }
-}

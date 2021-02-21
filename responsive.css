@@ -1,0 +1,35 @@
+@media screen and (max-width:800px) {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    .arrowfigure {
+        display: none;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+    .row{
+        flex-direction: column-reverse;;
+    }
+    .goals{
+        margin: 5vw 0vw;
+    }
+    .goals ul{
+        flex-direction: column;   
+    }
+    .projects{
+        margin: 5vw 0vw;   
+    }
+    .mediarow{
+        flex-direction: column;
+    }
+    .mediarow img{
+        width: 5vw;
+    }
+  }
