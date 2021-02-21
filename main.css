@@ -41,9 +41,9 @@ h6 {
 }
   
 p,li {
-  font-size: 1.1vw;
+  font-size: 1.2vw;
   color: rgb(85, 85, 85);
-  line-height: 28px;
+  line-height: 2vw;
 }
 
 a{
@@ -308,7 +308,6 @@ a.button{
 .sponsors {
   padding: 3vw 0vw;
   text-align: center;
-  margin-right: 2vw;
 }
 
 .sponsors p{
