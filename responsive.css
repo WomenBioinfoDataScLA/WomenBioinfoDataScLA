@@ -1,4 +1,5 @@
 @media screen and (max-width:800px) {
+   
     body {
         background-color: rgb(255, 255, 255);
     }
@@ -13,13 +14,19 @@
 
     nav ul{
         flex-direction: column;
+        height: auto;
+        list-style-type: none;
+        display: none;
     }
     .row{
         flex-direction: column-reverse;
         margin: 5vw 0vw;
     }
-    .abtext{
+    .about{
         margin-right: 0;
+    }
+    a.button{
+        margin:0.2em auto;
     }
     .goals{
         margin: 5vw 0vw;
@@ -27,8 +34,17 @@
     .goals ul{
         flex-direction: column;   
     }
+    .purplerow{
+        padding: 0vw 3vw;
+    }
     .projects{
         margin: 5vw 0vw;   
+    }
+    .projgrid{
+        grid-template-rows: auto auto;
+    }
+    .projgrid{
+        flex:1 1 100vw;
     }
     .mediarow{
         flex-direction: column;
@@ -36,4 +52,22 @@
     .mediarow img{
         width: 5vw;
     }
-  }
+
+    #navbar-toggle {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+        color: rgba(7, 6, 6, 0.8);
+        font-size: 24px;
+    }
+    
+    #navbar-toggle:hover {
+        color: rgb(114, 10, 10);
+    }
+}
+@media (min-width: 1200px) and (max-width: 1500px)
+nav ul > li a {
+    padding: 11px 11px;
+    font-size: 13px;
+}

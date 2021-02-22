@@ -14,23 +14,24 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-
 h1 {
-  font-size: 4vw;
-}
-h2 {
-  font-size: 3.5vw;
+  line-height: 45px;
+  font-size: 47px;
   color:  rgb(140, 100, 170);
   text-align: center;
   font-weight: bold;
-  line-height: 4vw;
   margin-bottom: 1.5vw;
 }
+h2 {
+  font-size: 3.4vw;
+  text-align: center;
+}
 h3 {
-  font-size: 2vw;
+  font-size: 3vw;
+  text-align: center;
 }
 h4 {
-  font-size: 1.2vw;
+  font-size: 16px;
   color: rgb(255, 255, 255);
 }
 h5 {
@@ -41,13 +42,17 @@ h6 {
 }
   
 p,li {
-  font-size: 1.2vw;
+  font-size: 17px;
   color: rgb(85, 85, 85);
-  line-height: 2vw;
+  line-height: 27px;
+  text-align: center;
 }
 
 a{
   text-decoration: none; /* remove underline */
+  font-size: 17px;
+  line-height: 27px;
+  text-align: center;
 }
 
 /*----------------------------- nav bar -----------------------------*/
@@ -76,6 +81,10 @@ nav{
   margin:0px -1px 0px 0px;
 }
 
+.arrowfigure img{
+  height:5.12vw;
+}
+
 nav button{
   display: none; /* remove button on a wide screen */
 }
@@ -88,7 +97,7 @@ nav ul{
   align-items: center;
   text-transform: uppercase;
   margin:0;
-  padding-left: 1.8vw;
+
 }
 
 nav li{
@@ -100,6 +109,7 @@ nav li{
  
 nav a{
   color: rgb(254, 254, 254);
+  font-size: 13px;
 }
 
 nav a:hover{
@@ -114,6 +124,10 @@ nav a:hover{
   color:#bdf2f2;
 }
 
+#navbar-toggle {
+  display: none;
+}
+
 /*----------------------------- ABOUT -----------------------------*/
 
 .row {
@@ -124,21 +138,21 @@ nav a:hover{
   justify-content: center;
 }
 
-.abtext {
+.about {
   padding: 3vw 0vw;
-  text-align: center;
   margin-right: 2vw;
+  text-align: center;
 }
 
-.abtext p{
+.about p{
   margin-bottom: 2vw;
 }
 
-.abfigure {
+.aboutfigure {
   padding: 3vw;
 }
 
-.abimg{
+.aboutfigure img{
   width:auto;
   height:26vw;
 }
@@ -154,20 +168,11 @@ nav a:hover{
   color:#FFFFFF;
   background-color:  #5cc6d0;
   transition: all 0.2s;
-  line-height: 2vw;
-  font-size: 1.1vw;
 }
 
 .button:hover{
   background-color: #e7d4f9;
   color: #906aac;
-}
-
-@media all and (max-width:30em){
-a.button{
-  display:block;
-  margin:0.2em auto;
-  }
 }
 
 /*----------------------------- GOALS -----------------------------*/
@@ -176,8 +181,7 @@ a.button{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-  margin: 5vw 12vw;
+  margin: 5vw 10vw;
 }
 
 .goals ul{
@@ -189,10 +193,8 @@ a.button{
 
 .goals li{
   background-color: #e7d4f9;
-  padding: 2.92vw;
-  margin: 1.46vw;
-  line-height: 1.31vw;
-  text-align: center;
+  padding: 2vw;
+  margin: 1.3vw;
   flex: 1;
   border-radius:2em; 
 }
@@ -200,7 +202,6 @@ a.button{
 /*----------------------------- 1stWBDS -----------------------------*/
 
 .p_purplerow{
-  text-align: center;
   margin: 0.3vw 0vw;
   line-height: 2vw;
 }
@@ -224,8 +225,6 @@ a.button{
 
 .purplerow h2{
   color:#e7d4f9;
-  font-size: 3vw;
-  text-align: center;
   margin: 1vw 0vw;
 }
 
@@ -235,8 +234,6 @@ a.button{
 
 .purplerow h3{
   color:#5cc6d0;
-  font-size: 2.2vw;
-  text-align: center;
   margin: 0.7vw 0vw;
 }
 
@@ -255,33 +252,33 @@ a.button{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 5vw 12vw;
+  margin: 5vw 10vw;
 }
 
-.projgrid{
-  display: grid;
-  grid-template-columns: 50% 50%; 
-  grid-template-rows: 15vw 15vw;
+.projectslist{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: stretch;
   padding: 0.2vw 2vw;
   gap: 2vw;
-  text-align: center;
 }
 
-.projgrid div {
+.projectslist li {
   background-color: #e7d4f9;
+  list-style-type: none;
   border-radius:2em;
   padding:2% 4%;
+  flex:1 1 40%;
 }
 
-.projgrid div:hover{
+.projectslist li:hover{
   transform: scale(1.05);
 }
 
-.projgrid h3{
+.projectslist h3{
   color:#4d38a5;
-  font-size: 2.2vw;
   margin-bottom: 1vw;
 }
 
@@ -340,9 +337,9 @@ a.button{
 }
 
 .email {
+  font-size: 13px;
   line-height: 5.2vw;
   color:#FFFFFF;
-  font-size: 1.2vw;
   font-weight: bold;
   font-style: normal;
   letter-spacing: 1px;
