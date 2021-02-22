@@ -25,7 +25,7 @@
     .about{
         margin-right: 0;
     }
-    a.button{
+    .button{
         margin:0.2em auto;
     }
     .goals{
@@ -40,30 +40,15 @@
     .projects{
         margin: 5vw 0vw;   
     }
-    .projgrid{
+    .projects ul{
         grid-template-rows: auto auto;
-    }
-    .projgrid{
         flex:1 1 100vw;
     }
-    .mediarow{
+    footer{
         flex-direction: column;
     }
-    .mediarow img{
+    footer img{
         width: 5vw;
-    }
-
-    #navbar-toggle {
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        cursor: pointer;
-        color: rgba(7, 6, 6, 0.8);
-        font-size: 24px;
-    }
-    
-    #navbar-toggle:hover {
-        color: rgb(114, 10, 10);
     }
 }
 @media (min-width: 1200px) and (max-width: 1500px)

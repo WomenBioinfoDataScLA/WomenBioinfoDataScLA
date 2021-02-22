@@ -71,7 +71,7 @@ nav{
   margin:0 3vw;
 }
 
-.logoimg{
+.logofigure img{
   width:auto;
   height:5.7vw;
   margin:0;
@@ -85,10 +85,6 @@ nav{
   height:5.12vw;
 }
 
-nav button{
-  display: none; /* remove button on a wide screen */
-}
-
 nav ul{
   width: 100%;
   background-color: rgb(140, 100, 170);
@@ -97,7 +93,6 @@ nav ul{
   align-items: center;
   text-transform: uppercase;
   margin:0;
-
 }
 
 nav li{
@@ -122,10 +117,6 @@ nav a:hover{
 
 .languages a{
   color:#bdf2f2;
-}
-
-#navbar-toggle {
-  display: none;
 }
 
 /*----------------------------- ABOUT -----------------------------*/
@@ -241,11 +232,6 @@ nav a:hover{
   color: #ffa992;
 }
 
-.purplerow span:hover {
-  color:#FFFFFF;
-}
-
-
 /*----------------------------- PROJECTS -----------------------------*/
 
 .projects {
@@ -255,7 +241,7 @@ nav a:hover{
   margin: 5vw 10vw;
 }
 
-.projectslist{
+.projects ul{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -265,7 +251,7 @@ nav a:hover{
   gap: 2vw;
 }
 
-.projectslist li {
+.projects li {
   background-color: #e7d4f9;
   list-style-type: none;
   border-radius:2em;
@@ -273,11 +259,11 @@ nav a:hover{
   flex:1 1 40%;
 }
 
-.projectslist li:hover{
+.projects li:hover{
   transform: scale(1.05);
 }
 
-.projectslist h3{
+.projects h3{
   color:#4d38a5;
   margin-bottom: 1vw;
 }
@@ -300,7 +286,7 @@ nav a:hover{
   grid-row-start:2;
 }
 
-/*----------------------------- SPONSORS -----------------------------*/
+/*----------------------------- COFFEE AND SPONSORS -----------------------------*/
 
 .sponsors {
   padding: 3vw 0vw;
@@ -314,7 +300,7 @@ nav a:hover{
 
 /*----------------------------- FOOTER -----------------------------*/
 
-.mediarow {
+footer {
   background-color: rgb(140, 100, 170);
   margin-top: 1.5vw;
   margin-bottom: 0;
@@ -325,18 +311,18 @@ nav a:hover{
   align-items: center;
 }
 
-.mediarow section{
+footer section{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.mediarow h3 {
+footer h4 {
   color:#FFFFFF;
   margin-bottom: 0px;
 }
 
-.email {
+address {
   font-size: 13px;
   line-height: 5.2vw;
   color:#FFFFFF;
