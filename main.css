@@ -64,7 +64,7 @@ nav{
   align-items: flex-start;
   margin:0;
   background: #f3f2f2;
-  height:6vw;
+  height:6vw;  
 }
 
 .logofigure{
@@ -73,8 +73,8 @@ nav{
 
 .logofigure img{
   width:auto;
-  height:5.7vw;
-  margin:0;
+  height:4.9vw;
+  margin-top: 2%;
 }
 
 .arrowfigure{
@@ -82,13 +82,13 @@ nav{
 }
 
 .arrowfigure img{
-  height:5.12vw;
+  height:5.1vw;
 }
 
-header{
+.header{
   background-color: rgb(140, 100, 170);
   width: 100%;
-  height: 5.12vw;
+  height: 5.1vw;
   display: flex;
   align-items: center;
 }
@@ -121,6 +121,9 @@ nav a:hover{
   color: #ffa992;  
 }
 
+.lang-img{
+  width: 32px;
+}
 
 .languages{
   margin:0 0.35vw;

@@ -2,45 +2,46 @@
     body {
         background-color: rgb(255, 255, 255);
     }
-    nav{
-        align-items: center;
-        height: auto;
-        flex-direction: column;
+
+    nav {
+        height: 11vw;
     }
-    .logofigure img{
-        width: 150px;
-        height:auto;
-        margin: 2vw;
+
+    .arrowfigure img{
+        height:9.1vw;
       }
-    .arrowfigure {
-        display: none;
+      
+    .header{
+    height: 9.1vw;
+    padding-left: 22%;
+    padding-right: 12%;
+    justify-content: right;
     }
-    header{
-        background-color: rgb(140, 100, 170);
-        width: 100%;
-        min-height: 40px;
+    
+    .nav-options{
+    position: absolute;
+    margin-top: 44%;
     }
-    .menu-reveal{
-        color: #fff;
-        cursor: pointer;
-        display: block;
-        font-weight: 400;
-        height: 22px;
-        line-height: 22px;
-        position: absolute;
-        right: 24px;
-        text-decoration: none;
-        top: 12px;
-        width: 26px;
+
+    .logofigure img{
+    width:auto;
+    height:8.9vw;
     }
-    .menu-reveal span{
-        background: #ffffff
-    }
+   
     nav ul{
         flex-direction: column;
-        height: auto;
+        margin-top: 40%;
         list-style-type: none;
-        display: none;
+        z-index: 10;
+    }
+
+    nav a{
+        color: rgb(140, 100, 170);
+        font-size: 13px;
+    }
+    .lang-ul{
+        flex-direction: row;
+        margin-top: 0;
     }
     .row{
         flex-direction: column-reverse;
