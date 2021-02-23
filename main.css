@@ -55,6 +55,10 @@ a{
   text-align: center;
 }
 
+.disable {
+  display: none;
+}
+
 /*----------------------------- nav bar -----------------------------*/
 /*https://itnext.io/how-to-create-a-responsive-navigation-bar-with-html-css-and-jquery-step-by-step-tutorial-9c780b58479f*/
 

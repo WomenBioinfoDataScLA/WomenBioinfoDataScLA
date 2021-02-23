@@ -19,8 +19,10 @@
     }
     
     .nav-options{
-    position: absolute;
-    margin-top: 44%;
+        position: absolute;
+        margin-top: 36%;
+        align-items: end;
+        margin-right: -8%;
     }
 
     .logofigure img{
@@ -42,6 +44,19 @@
     .lang-ul{
         flex-direction: row;
         margin-top: 0;
+    }
+
+    .languages a,
+    .languajes h4{
+        color: rgb(140, 100, 170);
+    }
+    .sep{
+        color: rgb(140, 100, 170); 
+    }
+
+    .lang-imige-mobile {
+        width: 19px;
+        padding-top: 8px;
     }
     .row{
         flex-direction: column-reverse;
