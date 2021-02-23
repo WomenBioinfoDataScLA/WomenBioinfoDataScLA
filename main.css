@@ -111,6 +111,11 @@ nav a:hover{
   color: #ffa992;
 }
 
+.active{
+  color: #ffa992;  
+}
+
+
 .languages{
   margin:0 0.35vw;
 }
