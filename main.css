@@ -24,11 +24,14 @@ h1 {
   width: 100%;
 }
 h2 {
-  font-size: 3.4vw;
+  line-height: 45px;
+  font-size: 2.5em;
+  color: rgb(140, 100, 170);
   text-align: center;
+  margin-bottom: 20px;
 }
 h3 {
-  font-size: 3vw;
+  font-size: 2.1em;
   text-align: center;
 }
 h4 {
@@ -210,11 +213,12 @@ nav a:hover{
 }
 
 .goals li{
-  background-color: #e7d4f9;
-  padding: 2vw;
+  background-color: #ffa992;
+  padding: 2.3vw;
   margin: 1.3vw;
   flex: 1;
   border-radius:2em; 
+  font-size: 17.5px;
 }
 
 /*----------------------------- 1stWBDS -----------------------------*/
@@ -222,6 +226,12 @@ nav a:hover{
 .p_purplerow{
   margin: 0.3vw 0vw;
   line-height: 2vw;
+  font-weight: bold;
+  color: #707081;
+}
+
+.p_purplerow a{
+  color:#4d38a5;
 }
 
 .purplerow {
@@ -230,7 +240,7 @@ nav a:hover{
   flex-wrap: wrap;
   justify-content: center;
   padding: 1.5vw 10vw;
-  margin: 1vw 0vw 1vw 0vw;
+  margin: 1vw 0vw 6vw 0vw;
   background-color: #906aac;
 }
 
@@ -242,12 +252,8 @@ nav a:hover{
 }
 
 .purplerow h2{
-  color:#e7d4f9;
+  color:#ffff;;
   margin: 1vw 0vw;
-}
-
-.purplerow h2:hover {
-  color: #ffa992;
 }
 
 .purplerow h3{
@@ -256,7 +262,7 @@ nav a:hover{
 }
 
 .purplerow h3:hover {
-  color: #ffa992;
+  color: #e7d4f9;;
 }
 
 /*----------------------------- PROJECTS -----------------------------*/
@@ -268,8 +274,8 @@ nav a:hover{
   margin: 5vw 10vw;
 }
 
-.projects h1 {
-  color: #4d38a5;
+.projects h2{
+  color:#4d38a5;
 }
 
 .projects ul{
@@ -278,15 +284,14 @@ nav a:hover{
   flex-wrap: wrap;
   justify-content: center;
   align-content: stretch;
-  padding: 0.2vw 2vw;
+  padding: 0.2vw 3vw;
   gap: 2vw;
 }
 
 .projects li {
-  background-color:#bdf2f2;
+  border-color:#5cc6d0;
+  border-style:solid;
   list-style-type: none;
-  border-radius:2em;
-  padding:2% 4%;
   flex:1 1 40%;
 }
 
@@ -298,6 +303,18 @@ nav a:hover{
   color:#4d38a5;
   margin-bottom: 25px;
   font-size: 1.5em;
+  background-color:#5cc6d0;
+  padding:1vw;
+  text-shadow: 2px 2px #bdf2f2;
+}
+
+.projects article{
+  padding:0 1.5vw 2vw;
+}
+
+.projects a {
+  color: #ffa992;
+  font-weight: bold;
 }
 
 .projitem1{
