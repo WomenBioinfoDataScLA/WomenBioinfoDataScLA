@@ -54,20 +54,28 @@
         color: rgb(140, 100, 170); 
     }
 
-    .lang-imige-mobile {
-        width: 19px;
-        padding-top: 8px;
-    }
     .row{
         flex-direction: column-reverse;
         margin: 5vw 0vw;
     }
 
     .ham{
+        display: block;
         position: absolute;
         margin-right: -7%;
         margin-top: 2%;
     }
+
+    .ham img{
+        width: 18px;
+    }
+
+    .lang-imige-mobile{
+        display: block;
+        width: 19px;
+        margin-top: -44px;
+        margin-left: 9px;
+      }
 
     .about{
         margin-right: 0;
