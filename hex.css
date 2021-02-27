@@ -298,8 +298,16 @@ nav{
 
 :root {
 	--Nhexa: 4;
-	--gap: .9vw;
+	--gap: 2vw;
 	--size: calc(calc(85vw / var(--Nhexa)) - var(--gap));
+}
+
+#projects{
+  box-sizing: border-box; 
+  overflow-X: hidden;
+	hyphens: auto;
+  position: relative;
+  box-sizing: inherit;
 }
 
 @media only screen and (max-width: 600px) {
@@ -307,19 +315,19 @@ nav{
 }
 
 .projects {
-    margin: calc(var(--size) * .7) auto 3vw;
-    width: calc(var(--size) * calc(var(--Nhexa) - 1));
-    display: grid;
+  margin: calc(var(--size) * .95) 0 0 15vw;
+  width: calc(var(--size) * calc(var(--Nhexa) - 1));
+	display: grid;
 	grid-template-columns: repeat(var(--Nhexa), 1fr);
 	grid-gap: var(--gap);
 }
 .projects a {
 	background: #5cc6d0;
-    width: var(--size); 
-    height: calc(var(--size) / 1.1111111);
+  width: var(--size); 
+  height: calc(var(--size) / 1.1111111);
 	clip-path: url(#hexagono);
-    clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-    margin-right: calc(var(--size) / 2);
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  margin-right: calc(var(--size) / 2);
 	color: #fff;
 	overflow: hidden;
 }
@@ -365,7 +373,7 @@ nav{
     font-size: .9em;
     line-height: 25px;
     color:#4d38a5;
-    margin:0 -8px;
+    margin:0 -9px;
 }
 
 .projects h3 {
