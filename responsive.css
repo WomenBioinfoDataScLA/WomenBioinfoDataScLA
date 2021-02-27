@@ -23,7 +23,7 @@
     
     .nav-options{
         position: absolute;
-        margin-top: 36%;
+        margin-top: 50%;
         align-items: end;
         margin-right: -2.5%;
     }
@@ -38,6 +38,10 @@
         margin-top: 40%;
         list-style-type: none;
         z-index: 10;
+    }
+
+    nav li{
+        line-height: 30px;
     }
 
     nav a{
@@ -155,7 +159,7 @@
         font-size: 13px;
         margin: 0 0.5vw;
     }
-
+    
     .languages {
         margin: 0 0.1vw;
     }
