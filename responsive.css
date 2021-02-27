@@ -12,7 +12,7 @@
 
     .arrowfigure img{
         height:9.2vw;
-      }
+    }
       
     .header{
         height: 9.2vw;
@@ -44,6 +44,7 @@
         color: rgb(140, 100, 170);
         font-size: 13px;
     }
+
     .lang-ul{
         flex-direction: row;
         margin-top: 0;
@@ -53,6 +54,7 @@
     .languajes h4{
         color: rgb(140, 100, 170);
     }
+
     .sep{
         color: rgb(140, 100, 170); 
     }
@@ -78,38 +80,46 @@
         width: 19px;
         margin-top: -44px;
         margin-left: 9px;
-      }
+    }
 
     .about{
         margin-right: 0;
     }
+
     .button{
         margin:0.2em auto;
         padding: 1.5vw 2.6vw;
     }
+
     .goals{
         margin: 5vw 0vw;
     }
+
     .goals ul{
         flex-direction: column;   
     }
+
     .purplerow{
         padding: 0vw 3vw;
     }
+
     .purplerow h3{
         font-size: 1.3em;
     }
-    .projects {
+
+    .projects{
         margin: calc(var(--size) * .7) 0 3vw 10vw;
-      }
+    }
     
     .support{
         padding-bottom: 10vw;
     }
+
     .support h2 {
         padding-top: 8vw;
         margin-bottom: 26px;
     }
+
     .support article {
         margin: 0px 6vw;
     }
@@ -117,6 +127,7 @@
     footer{
         flex-direction: column;
     }
+
     footer img{
         width: 5vw;
     }
@@ -140,10 +151,11 @@
 
 @media (min-width: 1010px) and (max-width: 1500px){
     nav ul > li {
-    padding: 8px 8px;
-    font-size: 13px;
-    margin: 0 0.5vw;
+        padding: 8px 8px;
+        font-size: 13px;
+        margin: 0 0.5vw;
     }
+
     .languages {
         margin: 0 0.1vw;
     }
