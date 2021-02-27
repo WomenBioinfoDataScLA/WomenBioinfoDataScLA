@@ -1,17 +1,24 @@
-@media screen and (max-width:800px) {
+@media screen and (max-width:850px) {
+    h2{
+        font-size: 2em;
+    }
+    h4{
+        line-height: 35px;
+    }
+    
     nav {
         height: 11vw;
     }
 
     .arrowfigure img{
-        height:9.1vw;
+        height:9.2vw;
       }
       
     .header{
-    height: 9.1vw;
-    padding-left: 22%;
-    padding-right: 12%;
-    justify-content: right;
+        height: 9.2vw;
+        padding-left: 22%;
+        padding-right: 12%;
+        justify-content: right;
     }
     
     .nav-options{
@@ -22,8 +29,8 @@
     }
 
     .logofigure img{
-    width:auto;
-    height:8.9vw;
+        width:auto;
+        height:8.9vw;
     }
    
     nav ul{
@@ -92,6 +99,9 @@
     .purplerow h3{
         font-size: 1em;
     }
+    .projects {
+        margin: calc(var(--size) * .7) 0 0 15vw;
+      }
     .support article{
         width: 100%;
         max-width: 100%;
@@ -104,8 +114,43 @@
         width: 5vw;
     }
 }
-@media (min-width: 1200px) and (max-width: 1500px)
-nav ul > li a {
-    padding: 11px 11px;
-    font-size: 13px;
+
+@media screen and (min-width:850px) and (max-width: 1009px){
+    h3 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+    nav ul > li {
+        margin: 0 1vw;
+    }
+    .row{
+        margin: 5vw 8vw;
+    }
+    .goals{
+        margin: 5vw 7vw;        
+    }
 }
+
+@media (min-width: 1010px) and (max-width: 1500px){
+    nav ul > li {
+    padding: 8px 8px;
+    font-size: 13px;
+    margin: 0 0.5vw;
+    }
+    .languages {
+        margin: 0 0.1vw;
+    }
+    :root {
+        --Nhexa: 6;
+      }
+      .projects .whitehex {
+          display: block;
+          background: #ffff;
+      }
+      .projects .orangehex {
+          display: block;
+          background: #ffa992;
+      }
+}
+
+/*-------------------------HEXAGONS-----------------------------*/
