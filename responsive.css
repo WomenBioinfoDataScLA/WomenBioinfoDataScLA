@@ -1,8 +1,4 @@
 @media screen and (max-width:800px) {
-    body {
-        background-color: rgb(255, 255, 255);
-    }
-
     nav {
         height: 11vw;
     }
@@ -93,13 +89,14 @@
     .purplerow{
         padding: 0vw 3vw;
     }
-    .projects{
-        margin: 5vw 0vw;   
+    .purplerow h3{
+        font-size: 1em;
     }
-    .projects ul{
-        grid-template-rows: auto auto;
-        flex:1 1 100vw;
+    .support article{
+        width: 100%;
+        max-width: 100%;
     }
+    
     footer{
         flex-direction: column;
     }
