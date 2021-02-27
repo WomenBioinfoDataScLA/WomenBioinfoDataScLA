@@ -85,7 +85,7 @@
     }
     .button{
         margin:0.2em auto;
-        padding: 3vw 2.6vw;
+        padding: 1.5vw 2.6vw;
     }
     .goals{
         margin: 5vw 0vw;
@@ -97,14 +97,21 @@
         padding: 0vw 3vw;
     }
     .purplerow h3{
-        font-size: 1em;
+        font-size: 1.3em;
     }
     .projects {
-        margin: calc(var(--size) * .7) 0 0 15vw;
+        margin: calc(var(--size) * .7) 0 3vw 10vw;
       }
-    .support article{
-        width: 100%;
-        max-width: 100%;
+    
+    .support{
+        padding-bottom: 10vw;
+    }
+    .support h2 {
+        padding-top: 8vw;
+        margin-bottom: 26px;
+    }
+    .support article {
+        margin: 0px 6vw;
     }
     
     footer{

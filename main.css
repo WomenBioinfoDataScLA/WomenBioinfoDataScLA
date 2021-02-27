@@ -274,28 +274,45 @@ nav{
 
 /*----------------------------- SUPPORT -----------------------------*/
 
-#support{
-    padding: 3vw 5vw;
-    margin:3vw 5vw;
-    background-color: #e7d4f9;
-}
 .support{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 2vw 0;
-    text-align: center;
-    justify-content: center;
-    gap:10vw;
+  background-image: url("assets/img/box.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-bottom: 5vw;
+}
+
+.support h2{
+  padding-top: 5vw;
 }
 
 .support article{
-    max-width: 40%;
+  margin: 0 25vw;
+  text-align: center;
 }
 
-.support p{
-    margin-bottom: 2vw;
+.supportlinks{
+  display: flex;
+  flex-direction: row;
+  margin: 2vw 0;
+  text-align: center;
+  justify-content: center;
+  gap:5vw;
 }
+
+.brochurelink{
+  margin: 2vw 0;
+}
+
+.brochurelink .button{
+  color: #ffff;
+  background-color: #906aac;
+}
+
+.brochurelink .button:hover{
+  color: #ffff;
+  background-color: #5cc6d0;
+}
+
 
 /*-------------------------HEXAGONS-----------------------------*/
 
@@ -314,7 +331,7 @@ nav{
 }
 
 .projects {
-  margin: calc(var(--size) * .70) 0 0 10vw;
+  margin: calc(var(--size) * .70) 0 3vw 10vw;
   width: calc(var(--size) * calc(var(--Nhexa) - 1));
 	display: grid;
 	grid-template-columns: repeat(var(--Nhexa), 1fr);
