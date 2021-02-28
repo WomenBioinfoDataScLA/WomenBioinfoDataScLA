@@ -20,7 +20,7 @@ body {
 
 h1 {
   line-height: 45px;
-  font-size: 2.5em;
+  font-size: 2.7em;
   color: rgb(140, 100, 170);
   text-align: center;
   font-weight: bold;
@@ -37,17 +37,18 @@ h2 {
 }
 
 h3 {
-  font-size: 2.1em;
+  font-size: 2.3em;
   text-align: center;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 2em;
   color: rgb(255, 255, 255);
 }
 
 h5 {
-  font-size: 1vw;
+  font-size: 1.3em;
+  color: rgb(255, 255, 255);
 }
 
 h6 {
@@ -229,9 +230,16 @@ nav a:hover{
   padding: 2.3vw;
   margin: 1.3vw;
   flex: 1;
-  border-radius:2em; 
+  border-radius: 4em 1em;
   font-size: 17.5px;
+  color: #292929;
+  box-shadow: 5px 5px 3px #bdf2f2;
 }
+
+.goals li:hover{
+  box-shadow: 5px 5px 3px #e7d4f9;
+}
+
 
 /*----------------------------- 1stWBDS -----------------------------*/
 
@@ -263,19 +271,21 @@ nav a:hover{
   justify-content: space-between;
 }
   
-.purplerow h2{
-  color:#ffff;;
-  margin: 1vw 0vw;
-}
-  
 .purplerow h3{
-  color:#5cc6d0;
-  margin: 0.7vw 0vw;
+  color:#ffff;;
+  margin: 1.2vw 0vw;
 }
   
-.purplerow h3:hover {
-  color: #e7d4f9;;
+.purplerow h4{
+  color:#5cc6d0;
+  margin: 1.2vw 0vw;
 }
+  
+.purplerow h3:hover,h4:hover{
+  color: #e7d4f9;
+}
+
+
 
 /*----------------------------- SUPPORT -----------------------------*/
 
@@ -475,12 +485,12 @@ footer h4 {
 }
   
 address {
-  font-size: .95em;
+  font-size: .98em;
   line-height: 5vw;
   color:rgb(92, 198, 208);
   font-weight: bold;
   font-style: normal;
-  letter-spacing: 1px;
+  letter-spacing: .1vw;
 }
   
 .medialinks{
