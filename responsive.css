@@ -1,4 +1,32 @@
-@media screen and (max-width:850px) {
+@media screen and (min-width: 350px) and (max-width: 650px){
+ h5{
+    font-size: 1.1em;
+ } 
+ .goals li{
+    padding: 4vw;
+ }
+ .purplerow li{
+     margin: 0 7vw;
+ }
+ .projects h2 {
+    font-size: 1.1em;
+ }
+ .support{
+     background-image: none;
+     background-color: #e7d4f9;
+ }
+ .supportlinks img{
+     width: 90%;     
+ }
+ footer {
+    padding-bottom: 4vw;
+ }
+ footer img {
+    width: 7vw;
+ }
+}
+
+@media screen and (max-width: 850px){
     h2{
         font-size: 2em;
     }
@@ -88,6 +116,7 @@
 
     .about{
         margin-right: 0;
+        margin: 0 4vw 2vw;
     }
 
     .button{
@@ -103,12 +132,20 @@
         flex-direction: column;   
     }
 
+    .goals li{
+        padding: 2.6vw;
+    }
+
     .purplerow{
         padding: 0vw 3vw;
     }
 
     .purplerow h3{
-        font-size: 1.3em;
+        font-size: 1.7em;
+    }
+
+    .purplerow h4{
+        font-size: 1.5em;
     }
 
     .projects{
@@ -130,26 +167,38 @@
     
     footer{
         flex-direction: column;
+        padding-bottom: 2vw;
     }
 
     footer img{
-        width: 5vw;
+        width: 4.5vw;
     }
 }
 
-@media screen and (min-width:850px) and (max-width: 1009px){
+@media screen and (min-width:851px) and (max-width: 1009px){
     h3 {
         font-size: 1.8em;
         text-align: center;
     }
     nav ul > li {
         margin: 0 1vw;
+        line-height: 18px;
+    }
+    nav a{
+        font-size: .85em;
     }
     .row{
         margin: 5vw 8vw;
     }
     .goals{
         margin: 5vw 7vw;        
+    }
+    .purplerow h3{
+        font-size: 1.7em;
+    }
+
+    .purplerow h4{
+        font-size: 1.5em;
     }
 }
 
@@ -163,6 +212,7 @@
     .languages {
         margin: 0 0.1vw;
     }
+
     :root {
         --Nhexa: 6;
       }
