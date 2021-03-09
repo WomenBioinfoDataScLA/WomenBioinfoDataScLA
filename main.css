@@ -53,8 +53,8 @@ h5 {
 }
 
 h6 {
-    font-size: 0.9vw;
-    font-size: 0.9em;
+    font-size: 1.2em;
+    text-align: center;
 }
 
 p,
@@ -227,6 +227,10 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     margin: 8% 10%;
+}
+
+.goals p {
+    margin: 1vw 5vw;
 }
 
 .goals ul {

@@ -209,4 +209,16 @@ function renderPortuguese() {
         <a id="about-button" href="#" class="button">Quem somos nós</a>
     </article>
     `);
+
+    const goalsPT=$(`
+    <article class="goals">
+        <h2>Nossa Visão e Missão </h2>
+        <p>Ciência e tecnologia são ambientes masculinizados em que as disparidades de gênero continuam a fazer parte de sua estrutura. Por isso, criamos um espaço com uma perspectiva ampla. Nosso objetivo é criar um espaço em que todas as mulheres possam se sentir seguras e empoderadas e possam desenvolver suas carreiras sem barreiras, que promova todos os aspectos que são importantes para a construção de uma sociedade e comunidade científica mais igualitária e diversa. Esta comunidade foi criada em 2019 com a missão de:</h6>
+        <ul>
+            <li>Promote and visibilize women research in the Bioinformatics and Data Science fields</li>
+            <li>Encourage women to establish collaborative research networks</li>
+            <li>Empower young scientists to be confident in their work and capabilities</li>
+        </ul>
+    </article>
+    `)
 }
