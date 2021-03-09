@@ -20,9 +20,6 @@ const contactButton = document.getElementById('contact-button');
 const spanishButton  = document.getElementById('spanish-button');
 const portugueseButton  = document.getElementById('portuguese-button');
 
-const aboutArticle = document.getElementById('about-article');
-
-
 function disableElement(element) {
     element.classList.add('disable');
 }
@@ -106,6 +103,7 @@ spanishButton.addEventListener('click', () => {
 
 portugueseButton.addEventListener('click', () => {
     disableElement(aboutArticle);
+    renderPortuguese();
 });
 
 
@@ -204,10 +202,11 @@ function renderconductSection() {
 
 
 function renderPortuguese() {
-    const PTContent = $(`
-    <h1>Mulheres na Bioinformática e Ciência de Dados LA</h1>
-    <p>Somos uma comunidade de mulheres que atuam nas áreas de Bioinformática e Ciência de Dados criada em 2019 com o objetivo de divulgar e dar visibilidade à pesquisa realizada por mulheres nessas áreas. Também buscamos criar redes e colaboração dentro da comunidade de mulheres cientistas dos setores público e privado. Nossos projetos visam reunir pesquisadoras da América Latina que atuam nas áreas de biologia de sistemas, tecnologias ômicas, inteligência artificial, aprendizado de máquina, ciência de dados, mineração de dados e computação de alto desempenho com aplicações em biologia dos setores público e privado.</p>
-    <a id="about-button" href="#" class="button">Quem somos nós</a>
+    const aboutPT = $(`
+    <article id="about-article" class='about'>
+        <h1>Mulheres na Bioinformática e Ciência de Dados LA</h1>
+        <p>Somos uma comunidade de mulheres que atuam nas áreas de Bioinformática e Ciência de Dados criada em 2019 com o objetivo de divulgar e dar visibilidade à pesquisa realizada por mulheres nessas áreas. Também buscamos criar redes e colaboração dentro da comunidade de mulheres cientistas dos setores público e privado. Nossos projetos visam reunir pesquisadoras da América Latina que atuam nas áreas de biologia de sistemas, tecnologias ômicas, inteligência artificial, aprendizado de máquina, ciência de dados, mineração de dados e computação de alto desempenho com aplicações em biologia dos setores público e privado.</p>
+        <a id="about-button" href="#" class="button">Quem somos nós</a>
+    </article>
     `);
-    PTContent.appendTo(about-article)
 }
