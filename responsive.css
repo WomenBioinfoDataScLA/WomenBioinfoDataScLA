@@ -104,12 +104,12 @@
     .ham img{
         width: 18px;
     }
-
+    .lang-img{
+        display:none;
+    }
     .lang-imige-mobile{
         display: block;
         width: 19px;
-        margin-top: -44px;
-        margin-left: 9px;
     }
 
     .row{

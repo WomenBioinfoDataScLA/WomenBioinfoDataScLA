@@ -11,6 +11,7 @@ const weSection = document.getElementById('who-we-are');
 const conductSection = document.getElementById('conduct');
 
 const homeButton  = document.getElementById('home-button');
+const aboutButton  = document.getElementById('about-button');
 const weButton  = document.getElementById('whoweare-button');
 const projectsButton = document.getElementById('projects-button');
 const conductButton = document.getElementById('conduct-button');
@@ -18,6 +19,8 @@ const supportButton = document.getElementById('support-button');
 const contactButton = document.getElementById('contact-button');
 const spanishButton  = document.getElementById('spanish-button');
 const portugueseButton  = document.getElementById('portuguese-button');
+
+const aboutArticle = document.getElementById('about-article');
 
 
 function disableElement(element) {
@@ -58,28 +61,51 @@ function cleanBody() {
 
 weButton.addEventListener('click', () => {
     cleanBody();
+    disableElement(conductSection);  
+    enableElement(weSection);
     renderWeSection();
     deactive(homeButton);
     active(weButton);
     deactive(conductButton);
 });
 
+aboutButton.addEventListener('click', () => {
+    cleanBody();
+    disableElement(conductSection);  
+    renderWeSection();
+    deactive(homeButton);
+    active(weButton);
+    deactive(conductButton);
+});
+
+projectsButton.addEventListener('click', () => {
+    enableElement(aboutSection);
+    enableElement(goalsSection);
+    enableElement(firsteventSection);
+    enableElement(projectsSection);
+    disableElement(weSection);
+    disableElement(conductSection);    
+    active(homeButton);
+    deactive(weButton);
+    deactive(conductButton);
+});
+
+
 conductButton.addEventListener('click', () => {
     cleanBody();
     disableElement(weSection);
+    enableElement(conductSection);
     renderconductSection();
     deactive(homeButton);
     deactive(weButton);
     active(conductButton);
 });
 
-projectsButton.addEventListener('click', () => {
+spanishButton.addEventListener('click', () => {
 });
 
-supportButton.addEventListener('click', () => {
-});
-
-contactButton.addEventListener('click', () => {
+portugueseButton.addEventListener('click', () => {
+    disableElement(aboutArticle);
 });
 
 
@@ -174,4 +200,14 @@ function renderconductSection() {
     conductSection.appendChild(unexpectedDiv);
     conductSection.appendChild(consequenceDiv);
     conductSection.appendChild(reportDiv);
+}
+
+
+function renderPortuguese() {
+    const PTContent = $(`
+    <h1>Mulheres na Bioinformática e Ciência de Dados LA</h1>
+    <p>Somos uma comunidade de mulheres que atuam nas áreas de Bioinformática e Ciência de Dados criada em 2019 com o objetivo de divulgar e dar visibilidade à pesquisa realizada por mulheres nessas áreas. Também buscamos criar redes e colaboração dentro da comunidade de mulheres cientistas dos setores público e privado. Nossos projetos visam reunir pesquisadoras da América Latina que atuam nas áreas de biologia de sistemas, tecnologias ômicas, inteligência artificial, aprendizado de máquina, ciência de dados, mineração de dados e computação de alto desempenho com aplicações em biologia dos setores público e privado.</p>
+    <a id="about-button" href="#" class="button">Quem somos nós</a>
+    `);
+    PTContent.appendTo(about-article)
 }
