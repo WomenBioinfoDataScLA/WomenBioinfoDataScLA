@@ -63,6 +63,7 @@ li {
     color: rgb(85, 85, 85);
     line-height: 27px;
     text-align: center;
+    list-style-type: none;
 }
 
 a {
@@ -233,6 +234,17 @@ nav a:hover {
     margin: 1vw 5vw;
 }
 
+.vision{
+    display: flex;
+    justify-content: center;
+    flex-grow:1 1;
+    flex-basis:0;
+}
+
+.vision p{
+    background-color: #ffa992;
+}
+
 .goals ul {
     list-style: none;
     display: flex;
@@ -253,6 +265,7 @@ nav a:hover {
 
 .goals li:hover {
     box-shadow: 5px 5px 3px #e7d4f9;
+    transform: scale(1.05);
 }
 
 
@@ -484,15 +497,17 @@ a.orangehex:active {
 /*----------------------------- FOOTER -----------------------------*/
 
 footer {
-    background-color: rgb(140, 100, 170);
-    margin-top: 1.5vw;
-    margin-bottom: 0;
-    padding-top: 1.5vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    position: absolute;
+    width: 100%;
     height: 11em;
+    margin-top: 1.5vw;
+    margin-bottom: 0;
+    padding-top: 1.5vw;
+    background-color: rgb(140, 100, 170);
 }
 
 footer section {

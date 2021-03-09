@@ -127,15 +127,22 @@ function renderWeSection(){
     MembersList.forEach(element => {
         const li = document.createElement('li');
         const figure =  document.createElement('figure');
-        li.className = "member"
+        const img =  document.createElement('img');
+        const figcappurple =  document.createElement('figcapture');
+        const figcapgray =  document.createElement('figcapture');
 
-        const member = $(`
-            <img src="./assets/img/${element.img}"  alt="${element.name}-img">
-            <figcaption class="name">${element.name}</figcaption>
-            <figcaption>${element.filiation}</figcaption>
-        `);
+        figure.className = "member";
+        figcappurple.className = "name";
+
+        img.src = "assets/img/" + element.img;
+        img.alt = element.name + "-img";
+        figcappurple.innerHTML = element.name;
+        figcapgray.innerHTML = element.filiation;
         
-        member.appendTo(figure);
+        figure.appendChild(img);
+        figure.appendChild(figcappurple);
+        figure.appendChild(figcapgray);
+
         li.appendChild(figure);
         ul.appendChild(li);
     });
