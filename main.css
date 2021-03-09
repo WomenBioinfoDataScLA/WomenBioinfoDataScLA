@@ -43,21 +43,23 @@ h3 {
 
 h4 {
     font-size: 2em;
-    color: rgb(255, 255, 255);
+    text-align: center;
 }
 
 h5 {
     font-size: 1.3em;
     color: rgb(255, 255, 255);
+    margin: 2vw 0;
 }
 
 h6 {
     font-size: 0.9vw;
+    font-size: 0.9em;
 }
 
 p,
 li {
-    font-size: 17px;
+    font-size: 1.06em;
     color: rgb(85, 85, 85);
     line-height: 27px;
     text-align: center;
@@ -65,8 +67,7 @@ li {
 
 a {
     text-decoration: none;
-    /* remove underline */
-    font-size: 17px;
+    font-size: 1.06em;
     line-height: 27px;
     text-align: center;
 }
@@ -127,15 +128,14 @@ nav ul {
 nav li {
     list-style-type: none;
     margin: 0 .3vw;
-    font-size: 0.9vw;
-    font-weight: bold;
-    line-height: 13px;
+    line-height: 18px;
 }
 
 nav a {
     color: rgb(254, 254, 254);
-    font-size: 13px;
+    font-size: 1.1em;
     line-height: 15px;
+    font-weight: bold;
 }
 
 nav a:hover {
@@ -242,7 +242,7 @@ nav a:hover {
     margin: 1.3vw;
     flex: 1;
     border-radius: 4em 1em;
-    font-size: 17.5px;
+    font-size: 1.1em;
     color: #292929;
     box-shadow: 5px 5px 3px #bdf2f2;
 }
@@ -266,10 +266,6 @@ nav a:hover {
 }
 
 .purplerow {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     padding: 1.5vw 10vw;
     margin: 1% 0 2% 0;
     background-color: #906aac;
@@ -278,13 +274,14 @@ nav a:hover {
 .purplerow ul {
     list-style: none;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .purplerow h3 {
     color: #ffff;
-    ;
     margin: 1.2vw 0vw;
 }
 
@@ -293,8 +290,7 @@ nav a:hover {
     margin: 1.2vw 0vw;
 }
 
-.purplerow h3:hover,
-h4:hover {
+.purplerow h3:hover, .purplerow h4:hover {
     color: #e7d4f9;
 }
 
@@ -305,7 +301,7 @@ h4:hover {
     background-image: url("assets/img/box.png");
     background-repeat: no-repeat;
     background-position: top;
-    padding: 0 5%;
+    padding: 0 5% 2%;
     margin-bottom: 5%;
     margin-top: 8%;
 }
@@ -439,7 +435,7 @@ a.orangehex:active {
 }
 
 .projects h2 {
-    font-size: .9em;
+    font-size: .95em;
     line-height: 25px;
     color: #4d38a5;
     margin: 0 -9px;
@@ -508,7 +504,8 @@ footer h4 {
 
 address {
     font-size: .98em;
-    line-height: 5vw;
+    line-height: 4vw;
+    margin-bottom: 1vw;
     color: rgb(92, 198, 208);
     font-weight: bold;
     font-style: normal;
@@ -551,7 +548,7 @@ address {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
     margin: 0;
     width: 100%;
 }
@@ -573,4 +570,24 @@ address {
     object-fit: cover;
     border-radius: 100%;
     border: 15px solid #ffa992;
+}
+
+.name{
+    font-weight: bold;
+    color: rgb(140, 100, 170);
+}
+
+/*---------------------CONDUCT-----------------------*/
+
+.conduct {
+    margin: 0 12vw;
+}
+
+.conduct h4{
+    margin: 5vw 7vw 2vw;
+    color:rgb(140, 100, 170);
+}
+
+.conduct div{
+    margin: 3vw 0;
 }
