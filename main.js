@@ -17,6 +17,7 @@ const projectsButton = document.getElementById('projects-button');
 const conductButton = document.getElementById('conduct-button');
 const supportButton = document.getElementById('support-button');
 const contactButton = document.getElementById('contact-button');
+const globeIcon = document.getElementById('globe-icon');
 const spanishButton  = document.getElementById('spanish-button');
 const portugueseButton  = document.getElementById('portuguese-button');
 
@@ -109,8 +110,10 @@ function renderWeSection(){
     const h2 = document.createElement('h2');
     const ul = document.createElement('ul');
 
-    h2.innerHTML = "Committee"
-    ul.className = "memberslist"
+    h2.innerHTML = "Committee";
+    h2.id ="commitee-title";
+
+    ul.className = "memberslist";
 
     MembersList.forEach(element => {
         const li = document.createElement('li');
@@ -219,7 +222,7 @@ function renderPortugueseIndexPage() {
     supportButton.innerHTML = "Nos Apoie"
     contactButton.innerHTML = "Contato"
     h1About.innerHTML = "Mulheres na Bioinformática e Ciência de Dados LA";
-    pAbout.innerHTML = "Somos uma comunidade de mulheres que atuam nas áreas de Bioinformática e Ciência de Dados criada em 2019 com o objetivo de divulgar e dar visibilidade à pesquisa realizada por mulheres nessas áreas. Também buscamos cr iar redes e colaboração dentro da comunidade de mulheres cientistas dos setores público e privado. Nossos projetos visam reunir pesquisadoras da América Latina que atuam nas áreas de biologia de sistemas, tecnologias ômicas, inteligência artificial, aprendizado de máquina, ciência de dados, mineração de dados e computação de alto desempenho com aplicações em biologia dos setores público e privado.";
+    pAbout.innerHTML = "Somos uma comunidade de mulheres que atuam nas áreas de Bioinformática e Ciência de Dados criada em 2019 com o objetivo de divulgar e dar visibilidade à pesquisa realizada por mulheres nessas áreas. Também buscamos criar redes e colaboração dentro da comunidade de mulheres cientistas dos setores público e privado. Nossos projetos visam reunir pesquisadoras da América Latina que atuam nas áreas de biologia de sistemas, tecnologias ômicas, inteligência artificial, aprendizado de máquina, ciência de dados, mineração de dados e computação de alto desempenho com aplicações em biologia dos setores público e privado.";
     aboutButton.innerHTML = "Quem somos nós";
     h2Goals.innerHTML = "Nossa visão e missão";
     li1Goals.innerHTML = "Ciência e tecnologia são ambientes masculinizados nos quais as disparidades de gênero permanecem parte de sua estrutura. Por isso, criamos um espaço com uma perspectiva ampla para que todas as mulheres se sintam seguras e empoderadas.";
@@ -372,18 +375,22 @@ ham.addEventListener("click", () => {
 });
 
 weButton.addEventListener('click', () => {
-    cleanBody();
-    disableElement(conductSection);  
-    enableElement(weSection);
-    renderWeSection();
-    deactive(homeButton);
-    active(weButton);
-    deactive(conductButton);
+    if(document.getElementById("commitee-title")){
+    } else{
+        cleanBody();
+        disableElement(conductSection);  
+        enableElement(weSection);
+        renderWeSection();
+        deactive(homeButton);
+        active(weButton);
+        deactive(conductButton);
+    }
 });
 
 aboutButton.addEventListener('click', () => {
     cleanBody();
     disableElement(conductSection);  
+    enableElement(weSection);
     renderWeSection();
     deactive(homeButton);
     active(weButton);
@@ -417,6 +424,11 @@ conductButton.addEventListener('click', () => {
         deactive(weButton);
         active(conductButton);
     }
+});
+
+globeIcon.addEventListener('click', () => {
+    localStorage.clear();
+    location.reload();
 });
 
 spanishButton.addEventListener('click', () => {

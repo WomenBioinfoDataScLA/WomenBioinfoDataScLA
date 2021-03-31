@@ -1,4 +1,4 @@
-@media screen and (min-width: 350px) and (max-width: 650px){
+@media screen and (min-width: 300px) and (max-width: 650px){
  h5{
     font-size: 1.1em;
 } 
@@ -24,24 +24,34 @@
     margin-bottom: 8vw;
     margin: 8% 4%;
 }
- .goals li{
+.goals li{
     padding: 4vw;
     font-size: 1em;
- }
- .purplerow li {
+}
+.purplerow li {
     margin: 3vw 7vw;
- }
- .projects h2 {
+}
+
+.p_purplerow {
+    line-height: 5vw;
+}
+.projects h2 {
     font-size: 1.1em;
- }
- .support{
-     background-image: none;
-     background-color: #e7d4f9;
- }
+}
+.member {
+    width: 16em;
+}
+.member img {
+    width: 10em;
+    height: 10em;
+}
+.support{
+    background-image: none;
+    background-color: #e7d4f9;
+}
  .support article {
     margin: 0;
  }
-
  .supportlinks img{
     width: 45%;   
  }
