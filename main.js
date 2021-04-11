@@ -238,7 +238,7 @@ function renderPortugueseIndexPage() {
     pEvents.innerHTML = "Você pode verificar como foi o 1WBDS no nosso website e canal do YouTube.";
     h2Projects.innerHTML = "Nossos Projetos";
     h2Conference.innerHTML = "Congresso 2° WBDS";
-    h3Conference.innerHTML = "Em Breve!";
+    h3Conference.innerHTML = "22-24 Set 21";
     h2Workshops.innerHTML = "Cursos";
     h3Workshops.innerHTML = "Em Breve!";
     h2Articles.innerHTML = "Artigos";
@@ -277,7 +277,7 @@ function renderSpanishIndexPage() {
     pEvents.innerHTML = "Puede comprobar cómo fue el 1WBDS en nuestro sitio web y canal de YouTube.";
     h2Projects.innerHTML = "Nuestros proyectos";
     h2Conference.innerHTML = "2do Congreso WBDS";
-    h3Conference.innerHTML = "¡Próximamente!";
+    h3Conference.innerHTML = "22-24 Sep 21";
     h2Workshops.innerHTML = "Cursos";
     h3Workshops.innerHTML = "¡Próximamente!";
     h2Articles.innerHTML = "Artículos";
