@@ -8,6 +8,7 @@ const firsteventSection = document.getElementById('1stwbds');
 const projectsSection = document.getElementById('projects');
 
 const weSection = document.getElementById('who-we-are');
+const $weSection = $(document.getElementById('who-we-are'));
 const conductSection = document.getElementById('conduct');
 const $conductSection = $(document.getElementById('conduct'));
 
@@ -109,6 +110,7 @@ const MembersList = [
 ];
 
 function renderWeSection(){
+    $weSection.empty();
     const h2 = document.createElement('h2');
     const ul = document.createElement('ul');
 
@@ -378,16 +380,13 @@ ham.addEventListener("click", () => {
 });
 
 weButton.addEventListener('click', () => {
-    if(document.getElementById("commitee-title")){
-    } else{
-        cleanBody();
-        disableElement(conductSection);  
-        enableElement(weSection);
-        renderWeSection();
-        deactive(homeButton);
-        active(weButton);
-        deactive(conductButton);
-    }
+    cleanBody();
+    disableElement(conductSection);  
+    enableElement(weSection);
+    renderWeSection();
+    deactive(homeButton);
+    active(weButton);
+    deactive(conductButton);
 });
 
 aboutButton.addEventListener('click', () => {
