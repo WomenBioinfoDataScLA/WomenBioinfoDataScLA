@@ -9,6 +9,7 @@ const projectsSection = document.getElementById('projects');
 
 const weSection = document.getElementById('who-we-are');
 const conductSection = document.getElementById('conduct');
+const $conductSection = $(document.getElementById('conduct'));
 
 const homeButton  = document.getElementById('home-button');
 const aboutButton  = document.getElementById('about-button');
@@ -74,6 +75,7 @@ function cleanBody() {
     disableElement(goalsSection);
     disableElement(firsteventSection);
     disableElement(projectsSection);
+    disableElement(conductSection); 
 }
 
 function languageCheck(language){
@@ -143,6 +145,7 @@ function renderWeSection(){
 }
 
 function renderconductSection() {
+    $conductSection.empty();
     const introDiv = document.createElement('div');
     const securityDiv = document.createElement('div');
     const consequenceDiv = document.createElement('div');
@@ -388,8 +391,7 @@ weButton.addEventListener('click', () => {
 });
 
 aboutButton.addEventListener('click', () => {
-    cleanBody();
-    disableElement(conductSection);  
+    cleanBody(); 
     enableElement(weSection);
     renderWeSection();
     deactive(homeButton);
@@ -412,19 +414,14 @@ projectsButton.addEventListener('click', () => {
 
 
 conductButton.addEventListener('click', () => {
-    if(document.getElementById("code-title")){
-        codeLangSetting();
-        renderconductSection();
-    } else{
-        cleanBody();
-        disableElement(weSection);
-        enableElement(conductSection);
-        renderconductSection();
-        codeLangSetting();
-        deactive(homeButton);
-        deactive(weButton);
-        active(conductButton);
-    }
+    cleanBody();
+    disableElement(weSection);
+    enableElement(conductSection);
+    renderconductSection();
+    codeLangSetting();
+    deactive(homeButton);
+    deactive(weButton);
+    active(conductButton);
 });
 
 globeIcon.addEventListener('click', () => {
