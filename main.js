@@ -413,7 +413,8 @@ projectsButton.addEventListener('click', () => {
 
 conductButton.addEventListener('click', () => {
     if(document.getElementById("code-title")){
-        codeLangSetting()
+        codeLangSetting();
+        renderconductSection();
     } else{
         cleanBody();
         disableElement(weSection);
